@@ -1,0 +1,5 @@
+cask "ghostty"
+cask "font-meslo-lg-nerd-font"
+brew "starship"
+brew "zsh-autosuggestions"
+brew "zoxide"
