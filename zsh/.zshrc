@@ -17,6 +17,7 @@ alias gcm="git commit -m"
 alias gf="git fetch"
 alias gp="git push"
 alias gt="git tag"
+alias gl="git pull"
 
 # --- terminal aliases ---
 alias cls="clear"
