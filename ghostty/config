@@ -1,2 +1,4 @@
 theme = Catppuccin Macchiato
 font-family = "MesloLGS NF"
+cursor-style = block
+shell-integration-features = no-cursor
