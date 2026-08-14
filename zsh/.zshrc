@@ -1,6 +1,11 @@
 # --- Completion ---
 autoload -Uz compinit && compinit
 
+# --- Word navigation ---
+# Drop "/" from WORDCHARS so Option+Delete stops at path separators
+# (e.g. `cd ~/code/work/dbml` only removes "dbml", not the whole path)
+WORDCHARS=${WORDCHARS//\//}
+
 # --- Plugins ---
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 eval "$(zoxide init zsh)"
@@ -18,9 +23,15 @@ alias gf="git fetch"
 alias gp="git push"
 alias gt="git tag"
 alias gl="git pull"
+alias gm="git merge"
+alias glg="git log"
+alias grb="git rebase"
 
 # --- terminal aliases ---
 alias cls="clear"
+alias ll="ls -l"
+alias lla="ls -la"
+alias llha="ls -lha"
 
 # --- environment / PATH ---
 export NVM_DIR="$HOME/.nvm"
