@@ -9,6 +9,7 @@ WORDCHARS=${WORDCHARS//\//}
 # --- Plugins ---
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 eval "$(zoxide init zsh)"
+alias zl="zoxide query -l"
 
 # --- Prompt ---
 eval "$(starship init zsh)"
