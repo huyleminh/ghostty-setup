@@ -1,5 +1,14 @@
-theme = Catppuccin Mocha
+theme = light:Catppuccin Mocha,dark:Catppuccin Mocha
 font-family = "MesloLGS NF"
 cursor-style = block
 shell-integration-features = no-cursor
 bell-features = system
+
+background-opacity = 0.8
+background-blur = true
+focus-follows-mouse = false
+
+keybind = super+alt+h=goto_split:left
+keybind = super+alt+j=goto_split:down
+keybind = super+alt+k=goto_split:up
+keybind = super+alt+l=goto_split:right

@@ -14,6 +14,9 @@ alias zl="zoxide query -l"
 # --- Prompt ---
 eval "$(starship init zsh)"
 
+# --- Fetch (new tab/shell info screen) ---
+fastfetch
+
 # --- git aliases ---
 alias gst="git status"
 alias gco="git checkout"
@@ -27,6 +30,7 @@ alias gl="git pull"
 alias gm="git merge"
 alias glg="git log"
 alias grb="git rebase"
+alias gt="git tag"
 
 # --- terminal aliases ---
 alias cls="clear"

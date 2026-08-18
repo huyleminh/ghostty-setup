@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  // Active logo: compact built-in Apple ASCII art.
+  "logo": {
+    "source": "Apple"
+  },
+
+  // Alternative logo: the official Catppuccin cat mascot, rendered as a real
+  // image via Ghostty's Kitty graphics protocol support. To use it, comment
+  // out the "logo" block above and uncomment this one instead.
+  // "logo": {
+  //   "type": "kitty",
+  //   "source": "~/.config/fastfetch/catppuccin-logo.png",
+  //   "height": 12,
+  //   "padding": { "top": 1, "right": 2 }
+  // },
+
+  // Alternative logo: same Catppuccin image, but rendered as actual
+  // ASCII/Unicode block-character art via libchafa instead of an image
+  // protocol. Works in any terminal, no Kitty/iTerm/Sixel support needed.
+  // "logo": {
+  //   "type": "chafa",
+  //   "source": "~/.config/fastfetch/catppuccin-logo.png",
+  //   "height": 12
+  // },
+
+  // Named ANSI colors so key labels/title pick up whichever Catppuccin
+  // flavor (Latte/Mocha) Ghostty's terminal palette is currently using.
+  "display": {
+    "color": {
+      "keys": "magenta",
+      "title": "cyan"
+    }
+  },
+
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "shell",
+    "terminal",
+    "cpu",
+    "memory",
+    "uptime",
+    "break"
+  ]
+}

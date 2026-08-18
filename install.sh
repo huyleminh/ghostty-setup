@@ -27,5 +27,7 @@ echo "==> Linking configs"
 link "$REPO_DIR/ghostty/config" "$HOME/.config/ghostty/config"
 link "$REPO_DIR/starship.toml" "$HOME/.config/starship.toml"
 link "$REPO_DIR/zsh/.zshrc" "$HOME/.zshrc"
+link "$REPO_DIR/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+link "$REPO_DIR/fastfetch/catppuccin-logo.png" "$HOME/.config/fastfetch/catppuccin-logo.png"
 
 echo "==> Done. Open a new terminal window (or restart Ghostty) to pick up the changes."
